@@ -1,0 +1,41 @@
+body{
+    font-family: "temeraire", serif;
+        font-weight: 400;
+        font-style: normal;
+}
+.flag{
+    margin-right: 50px;
+    width: 50px;
+    height: 25px;
+}
+
+
+
+.container1{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 250px;
+    margin-top: 50px;
+}
+
+.name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container3{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.row1{
+    padding-top: 30px;
+}
