@@ -19,41 +19,44 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="flag.jpg" alt="flag" width="150" height="75">
-                </a>
+        
+        <div class="navbar">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="flag.jpg" alt="flag" width="150" height="75">
+                    </a>
                     
-                <a class="navbar-brand" href="#">Saint Thomas</a>
-                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    <a class="navbar-brand" href="#">Saint Thomas</a>
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
                     
-                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Day Trip to St. John</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#john">Day Trip to St. John</a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">In St. Thomas</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#thomas">In St. Thomas</a>
+                            </li>
 
 
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Action 1</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
-                        </div>
-                        </li>
-                    </ul>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                            </li>
+                        </ul>
                 
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
 
     </header>
 
@@ -73,36 +76,45 @@
             
 
             <div class="row-col-6">
-                <h1>Day Trip To St. John</h1>
+                <div class="john" id="john">
+                    <h1>Day Trip To St. John</h1>
+                </div>
             </div>
 
-
+        
             <div class="row p-5">
                 <div class="row-cols-6">
-                    <img id="trunk" src="beach.jpg">
-                    <img id="sunset" src="boat.jpg">
-                    <img id="reflection" src="night.jpg">
+                    
+                        <img id="trunk" src="beach.jpg">
+                        <img id="sunset" src="boat.jpg">
+                        <img id="reflection" src="night.jpg">
+                    </div>
                 </div>    
                     
                 <div class="row1">
-                    <img src="taxi.jpg" class="img-fluid w-75">
+                    <div class="taxi">
+                        <img src="taxi.jpg" class="img-fluid w-75">
+                    </div>
                 </div>
                 
             </div>
 
 
-        </div>
+        
 
         <div class="container3">
             
 
             <div class="row-col-6">
-                <h1>In St. Thomas</h1>
+                <div class="thomas" id="thomas">
+                    <h1>In St. Thomas</h1>
+                </div>
             </div>
 
 
             <div class="row p-5">
-                <div class="cols-6 m-3">
+                <div class="row-cols-6 m-3">
+                    
                     <img id="house" src="view.png">
                     <img id="fromroom" src="room.jpg">
                     <img src="look.jpg">
@@ -124,8 +136,12 @@
 
     </main>
     <footer>
-        <!-- place footer here -->
+        <div class="footer">
+            <p> First website used:    <a href="https: //prismic.io/blog/css-hover-effects" target="_blank">#1</a></p>
+            <p> Second website used:   <a href="https://www.w3schools.com/howto/howto_css_fixed_menu.asp" target="_blank">#2</a></p>
+        </div>
     </footer>
+    
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

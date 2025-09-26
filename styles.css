@@ -2,6 +2,7 @@ body{
     font-family: "temeraire", serif;
         font-weight: 400;
         font-style: normal;
+        padding-top: 50px;
 }
 .flag{
     margin-right: 50px;
@@ -9,7 +10,24 @@ body{
     height: 25px;
 }
 
+.navbar{
+    position:fixed;
+    top: 0;
+    width:100%;
+    overflow: hidden;
+    z-index: 999;
+}
 
+.footer {
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 .container1{
     position: relative;
@@ -17,6 +35,7 @@ body{
     color: white;
     font-size: 250px;
     margin-top: 50px;
+    padding-bottom: 50px;
 }
 
 .name {
@@ -29,13 +48,98 @@ body{
 .container2{
     text-align: center;
     margin-top: 50px;
+    background-color: beige;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 40px;
 }
+
+
 
 .container3{
     text-align: center;
     margin-top: 50px;
+    background-color: beige;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 40px;
 }
+
+
 
 .row1{
     padding-top: 30px;
+}
+
+
+/*https: //prismic.io/blog/css-hover-effects*/
+
+.john {
+    font-size: 2rem;
+    color: black;
+    position: relative;
+    display: inline-block;
+}
+
+.john::after,
+.john::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #000000, #00ffff);
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-out;
+}
+
+.john::before {
+    top: -5px;
+    transform-origin: left;
+}
+
+.john:hover::after,
+.john:hover::before {
+    transform: scaleX(1);
+}
+
+.thomas {
+    font-size: 2rem;
+    color: black;
+    position: relative;
+    display: inline-block;
+}
+
+.thomas::after,
+.thomas::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #00ffff, #000000);
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-out;
+}
+
+.thomas::before {
+    top: -5px;
+    transform-origin: left;
+}
+
+.thomas:hover::after,
+.thomas:hover::before {
+    transform: scaleX(1);
 }
